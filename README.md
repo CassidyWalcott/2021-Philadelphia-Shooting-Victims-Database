@@ -5,3 +5,4 @@ For this project, I used PostgreSQL to build a database for storing data related
   - Create `shooting_victims` with appropriate data types from `victims.csv`
   - Create `master` and `student` user groups with appropriate privleges
   - Create users `senior` and `junior` and assign to `master` and `junior` groups
+  - Verify privligaes of User Groups
