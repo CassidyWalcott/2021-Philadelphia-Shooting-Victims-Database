@@ -12,7 +12,7 @@ I first opened `incidents_part1.csv` & `incidents_part1.csv` and extracted the f
   - `district`
   - `code`
   - `date`
-  - `time`
+  - `time_est`
   - `race`
   - `sex`
   - `latino`
@@ -23,4 +23,23 @@ I first opened `incidents_part1.csv` & `incidents_part1.csv` and extracted the f
   - `officer_injured`
   - `officer_deceased`
   - `location`
+for the results above, `location`, `officer_deceased`, `officer_injured`, `officer_involved`, `wound`, `race`, & `sex` are represented by the data type `varchar(100)`. `district`, `code`, `latino`, `age`, & `fatal` are represented by the data type `integer`. `date` is respresented by the data type `date` and `time` is represented by the data type `integer`
+# Creating the Database & Table with Appropriate Data Types
+I opened PostgreSQL and first created the Database `Homicide` to store the table that will include the aforementioned headers and associated data rows. After creating the `Homicide` database, I created the table `Shooting_Victims` with the appropriate data types:
+ - `district` - `INTEGER`
+  - `code` - `INTEGER`
+  - `latino` - `INTEGER`
+  - `age` - `INTEGER`
+  - `fatal` - `INTEGER`
+  - `date` - `INTEGER`
+  - `time_est` - `TIME`
+  - `race` - `VARCHAR(100)`
+  - `sex` - `VARCHAR(100)`
+  - `wound` - `VARCHAR(100)`
+  - `officer_involved` - `VARCHAR(100)`
+  - `officer_injured` - `VARCHAR(100)`
+  - `officer_deceased` - `VARCHAR(100)`
+  - `location` - `VARCHAR(100)`
+  
+  
 
